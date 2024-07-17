@@ -9,6 +9,7 @@ import { sidebarLinks } from '@/constants/index';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 import { useRouter } from 'next/router';
+import Footer from './Footer';
 
 
 
@@ -53,7 +54,8 @@ const Sidebar = ({ user }: SidebarProps) => {
               USER
           </nav>
 
-          FOOTER
+          <Footer user={user} />
+
     </section>
   )
 }
